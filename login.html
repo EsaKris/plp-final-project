@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ShopEase</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <!-- Auth Section -->
+    <section class="auth-section">
+        <div class="auth-image">
+            <div class="auth-image-content">
+                <h2>Welcome Back!</h2>
+                <p>Login to access your account and continue your shopping experience with ShopEase.</p>
+                
+                <ul class="auth-features">
+                    <li><i class="fas fa-check-circle"></i> Fast and secure checkout</li>
+                    <li><i class="fas fa-check-circle"></i> Track your orders</li>
+                    <li><i class="fas fa-check-circle"></i> Save your favorite items</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="auth-content">
+            <div class="auth-logo">
+                <i class="fas fa-shopping-bag"></i>
+                ShopEase
+            </div>
+            
+            <h1 class="auth-title">Login to Your Account</h1>
+            <p class="auth-subtitle">Enter your email and password to access your account</p>
+            
+            <form class="auth-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="auth-actions">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="btn auth-btn">Login</button>
+                
+                <div class="auth-divider">or</div>
+                
+                <div class="social-auth">
+                    <button type="button" class="btn social-btn google">
+                        <i class="fab fa-google"></i> Google
+                    </button>
+                    <button type="button" class="btn social-btn facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </button>
+                </div>
+                
+                <p class="auth-footer">
+                    Don't have an account? <a href="signup.html">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/auth.js"></script>
+</body>
+</html>

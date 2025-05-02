@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ShopEase</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <!-- Auth Section -->
+    <section class="auth-section">
+        <div class="auth-image">
+            <div class="auth-image-content">
+                <h2>Join ShopEase Today!</h2>
+                <p>Create an account to enjoy all the benefits of our platform and start shopping.</p>
+                
+                <ul class="auth-features">
+                    <li><i class="fas fa-check-circle"></i> Fast and secure checkout</li>
+                    <li><i class="fas fa-check-circle"></i> Track your orders</li>
+                    <li><i class="fas fa-check-circle"></i> Save your favorite items</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="auth-content">
+            <div class="auth-logo">
+                <i class="fas fa-shopping-bag"></i>
+                ShopEase
+            </div>
+            
+            <h1 class="auth-title">Create Your Account</h1>
+            <p class="auth-subtitle">Fill in your details to get started</p>
+            
+            <form class="auth-form" id="signupForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" class="form-control" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" class="form-control" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Create a password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="terms" required> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn auth-btn">Sign Up</button>
+                
+                <div class="auth-divider">or</div>
+                
+                <div class="social-auth">
+                    <button type="button" class="btn social-btn google">
+                        <i class="fab fa-google"></i> Google
+                    </button>
+                    <button type="button" class="btn social-btn facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </button>
+                </div>
+                
+                <p class="auth-footer">
+                    Already have an account? <a href="login.html">Log in</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/auth.js"></script>
+</body>
+</html>
